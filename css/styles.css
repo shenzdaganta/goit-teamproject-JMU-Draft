@@ -65,6 +65,11 @@
     fill: #FFF;
 }
 
+.heromobile-logo {
+    display: flex;
+    justify-content: space-around;
+}
+
 .hero-imagearea {
     background: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url("../images/heromainimage.jpg");
     background-size: cover;
