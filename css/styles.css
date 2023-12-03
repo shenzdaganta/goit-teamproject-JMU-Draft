@@ -10,7 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 188px;
+    padding-right: 100px;
+    flex-wrap: nowrap;
 }
 
 .heromain-logo {
@@ -75,7 +76,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    width: 100%;
     border-radius: 25px;
     justify-content: flex-end;
     margin-top: 36px;
@@ -370,7 +370,7 @@
         width: 1200px;
     }
     
-    .hero-mobile .js-close-menu {
+    .hero-mobile {
         display: none;
     }
 }
@@ -424,10 +424,14 @@
 
 /*Mobile View*/
 
-@media (min-width: 375px) (max-width: 767px) {
+@media (max-width: 767px) {
     .heroabout-container {
         flex-basis: calc(100% / 1);
         padding-top: 25px;
+    }
+
+    .hero-desktop {
+        display: none;
     }
 
 
@@ -442,10 +446,6 @@
 
     .hero-imagebtns {
         justify-content: flex-start;
-    }
-
-    .hero-desktop {
-        display: none;
     }
 
     .hero-h1 {
@@ -490,6 +490,27 @@
         font-weight: 600;
     }
 
+    .mobile-menu.is-open {
+        transform: translateX(50)
+    }
+    
+    .mobile-menu.is-open {
+        top: 0;
+        display: block;
+        height: 100vh;
+        width: 290px;
+        position: fixed;
+        background-color: #1E1823;
+        transition: transform 250ms ease-in-out;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .js-close-menu {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+    }
+
 }
 
 @media (max-width: 374px) {
@@ -530,3 +551,24 @@
         font-family: Montserrat;
         font-weight: 600;
     }   
+
+    .mobile-menu.is-open {
+        transform: translateX(50)
+    }
+    
+    .mobile-menu.is-open {
+        top: 0;
+        display: block;
+        height: 100vh;
+        width: 290px;
+        position: fixed;
+        background-color: #1E1823;
+        transition: transform 250ms ease-in-out;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .js-close-menu {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+    }
