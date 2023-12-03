@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <header class="hero-header hero-desktop">
+    <header class="hero-desktop">
 
         <div class="hero-container hero-header">
         
@@ -40,24 +40,26 @@
         </nav>
 
         <ul class="hero-social">
-            <li>
+            <a>
                 <svg height="24" width="24">
                     <use href="./images/icons.svg#instagram-2"></use>
                 </svg>
-            </li>
-            <li>
+            </a>
+            <a>
                 <svg height="24" width="24" class="hero-socialtwitter">
                     <use href="./images/icons.svg#twitter-4"></use>
                 </svg>
-            </li>
+            </a>
         </ul>
 
         </div>
 
     </header>
 
-    <header>    
-   <!--Logo-->
+    <header class="hero-mobile">    
+
+        <div class="hero-container">
+        <!--Logo-->
         <div class="heromobile-logo">
             <div class="heromain-logocontainer">
             <a href="/Simply Chocolate" class="heromain-logo"><i>Simply</i> Chocolate</a>
@@ -66,15 +68,52 @@
                 </svg>
             </div>
             <div>
-                <svg width="32" height="22">
+                <svg width="32" height="22" class="js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                     <use href="./images/icons.svg#hamburger"></use>
                 </svg>
             </div>
         </div>
+
+        </div>
     </header>
 
+    <div class="js-menu-container mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-container">
+            <button class="modal-close-button js-close-menu">
+                <svg width="32" height="32">
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
+            <nav class="heromobile-nav">
+                <ul class="heromobile-links">
+                    <li><a href='/Home'>Home</a></li>
+                    <li><a href='/How its made'>How it's made?</a></li>
+                    <li><a href='/Our products'>Our products</a></li>
+                    <li><a href='/Top seller'>Top sellers</a></li>
+                    <li><a href='/Chocolate is loved'>Chocolate is loved</a></li>
+                </ul>
+
+                <div>
+                    <div class="hero-mobilesocial">
+                        <a>
+                        <svg height="24" width="24" class="heromobile-social">
+                            <use href="./images/icons.svg#instagram-2"></use>
+                        </svg>
+                        </a>
+                        <a>
+                        <svg height="24" width="24" class="">
+                            <use href="./images/icons.svg#twitter-5"></use>
+                        </svg>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    
+    </div>
+
     <main>
-        <section class="hero-imagearea">
+        <section class="hero-imagearea hero-container">
             <h1 class="hero-h1">
             Treat yourself or a loved one to<br> our finest ingredients for a moment<br>of pure delight!
             </h1>
@@ -101,7 +140,8 @@
         <!--Hero Description-->
 
         <section class="hero-aboutarea">
-            
+        
+            <div class="hero-container">
             <ul class="heroabout-list">
                <li class="heroabout-container">
                 <svg height="32" width="32" class="heroabout-icon">
@@ -133,8 +173,15 @@
                 </li>
             </ul>
 
+            </div>
+
         </section>
     </main>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
     
 </body>
 </html>
