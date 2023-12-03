@@ -206,11 +206,11 @@
     border: 1px solid #FD9222;
 }
 
-.hero-btnicon svg:hover {
+.hero-btnicon:hover {
     fill: #FFF;
 }
 
-.hero-btnicon svg:active {
+.hero-btnicon:hover {
     fill: #FFF;
 }
 
@@ -319,11 +319,11 @@
     text-align: center;
 }
 
-.heromobile-links a:hover {
+.heromobile-links:hover {
     color:#FD9222;
 }
 
-.heromobile-links a:active {
+.heromobile-links:active {
     color: #FD9222;
 }
 
