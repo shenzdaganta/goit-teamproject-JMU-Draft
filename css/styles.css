@@ -204,13 +204,10 @@
 .hero-btnicon:hover {
     background-color: #FD9222;
     border: 1px solid #FD9222;
+    color: #FFF;
 }
 
-.hero-btnicon:hover {
-    fill: #FFF;
-}
-
-.hero-btnicon:hover {
+.hero-btnicon:focus {
     fill: #FFF;
 }
 
@@ -514,6 +511,7 @@
 }
 
 @media (max-width: 374px) {
+
     .hero-desktop {
         display: none;
     }
@@ -553,7 +551,7 @@
     }   
 
     .mobile-menu.is-open {
-        transform: translateX(50)
+        transform: translateX(0);
     }
     
     .mobile-menu.is-open {
@@ -572,3 +570,4 @@
         top: 10px;
         right: 25px;
     }
+}
